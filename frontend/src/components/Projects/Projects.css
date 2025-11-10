@@ -1,0 +1,13 @@
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 3px var(--quaternary);
+}
+
+.heading {
+    color: var(--secondary);
+    text-shadow: 0 5px 12px var(--quaternary);
+}

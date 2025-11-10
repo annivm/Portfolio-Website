@@ -1,0 +1,30 @@
+.contact-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 20px 3px var(--quaternary);
+}
+
+.contact-heading {
+    flex: 1;
+    color: var(--secondary);
+    text-shadow: 0 5px 12px var(--quaternary);
+}
+
+.contact-info {
+    flex: 1;
+    font-size: 1.1rem;
+}
+
+
+.contact-form {
+    flex: 1.5;
+}
+
+.form-label {
+    color: var(--tertiary)
+}

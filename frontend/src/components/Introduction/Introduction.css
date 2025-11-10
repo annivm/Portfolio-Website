@@ -1,0 +1,18 @@
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem;
+    padding: 2rem;
+
+}
+
+.heading {
+    color: var(--secondary);
+    text-shadow: 0 5px 12px var(--quaternary);
+}
+
+.introduction-text {
+    font-size: 1.2rem;
+    max-width: 500px;
+}
