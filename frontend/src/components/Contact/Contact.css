@@ -28,3 +28,12 @@
 .form-label {
     color: var(--tertiary)
 }
+
+
+@media (max-width: 1000px) {
+    .contact-box {
+        flex-direction: column;
+        text-align: center;
+        ;
+    }
+}

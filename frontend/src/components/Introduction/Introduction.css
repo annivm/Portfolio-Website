@@ -16,3 +16,13 @@
     font-size: 1.2rem;
     max-width: 500px;
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1.5s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,4 +1,4 @@
-import { forwardRef, useState } from 'react';
+import { forwardRef } from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -6,23 +6,20 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import FadeInText from '../Shared/FadeInText/FadeInText';
 
 
 import './Education.css';
 
+
 const Education = forwardRef((props, ref) => {
 
-    const [isHovered, setIsHovered] = useState(null);
-
     return (
-        <div ref={ref} className="box">
+        <div ref={ref} className="education-box">
             <h1 className="heading">Education</h1>
 
             <Timeline position='alternate'>
-                <TimelineItem
-                    onMouseEnter={() => setIsHovered(0)}
-                    onMouseLeave={() => setIsHovered(null)}
-                >
+                <TimelineItem>
                     <TimelineOppositeContent sx={{ color: 'var(--secondary)'}}>
                         2023 - Present
                     </TimelineOppositeContent>
@@ -32,18 +29,15 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         ICT Engineer
-                        <p className={`timeline-text ${isHovered === 0 ? 'hovered' : ''}`}>
+                        <FadeInText className='timeline-text' delay={300}>
                             Tampere University of Applied Sciences
                             <br/>
                                 199/240 ETCs
-                        </p>
+                        </FadeInText>
                     </TimelineContent>
                 </TimelineItem>
 
-                <TimelineItem
-                    onMouseEnter={() => setIsHovered(1)}
-                    onMouseLeave={() => setIsHovered(null)}
-                >
+                <TimelineItem>
                     <TimelineOppositeContent sx={{ color: 'var(--secondary)'}}>
                         2016 - 2019
                     </TimelineOppositeContent>
@@ -53,18 +47,15 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         Biomedical Laboratory Scientist
-                        <p className={`timeline-text ${isHovered === 1 ? 'hovered' : ''}`}>
+                        <FadeInText className='timeline-text' delay={300}>
                             Tampere University of Applied Sciences
                             <br/>
                             Graduated
-                        </p>
+                        </FadeInText>
                     </TimelineContent>
                 </TimelineItem>
 
-                <TimelineItem
-                    onMouseEnter={() => setIsHovered(2)}
-                    onMouseLeave={() => setIsHovered(null)}
-                >
+                <TimelineItem>
                     <TimelineOppositeContent sx={{ color: 'var(--secondary)'}}>
                         2012 - 2015
                     </TimelineOppositeContent>
@@ -73,11 +64,11 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         General Upper Secondary School
-                        <p className={`timeline-text ${isHovered === 2 ? 'hovered' : ''}`}>
+                        <FadeInText className='timeline-text' delay={300}>
                             Järvenpään lukio
                             <br/>
                             Graduated
-                        </p>
+                        </FadeInText>
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
