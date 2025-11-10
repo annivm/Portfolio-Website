@@ -1,9 +1,17 @@
+import { useEffect, useState } from 'react';
 import Button from '../Shared/Button/Button';
 import './NavBar.css';
 
 const NavBar = ({ onIntro, onExp, onEdu, onProj, onContact }) => {
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect( () => {
+        const handleScroll = () => setIsSticky(window.scrollY > 20);
+        window.addEventListener('scroll', handleScroll);
+    })
+
     return(
-        <div className="navbar">
+        <div className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
             <Button size="big" onClick={onIntro}>
                 Introduction
             </Button>

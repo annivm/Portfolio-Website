@@ -7,7 +7,3 @@
     box-shadow: 0 0 20px 3px var(--quaternary);
 }
 
-.heading {
-    color: var(--secondary);
-    text-shadow: 0 5px 12px var(--quaternary);
-}

@@ -9,7 +9,7 @@
 
 .heading {
     color: var(--secondary);
-    text-shadow: 0 5px 12px var(--quaternary);
+    text-shadow: 0 3px 12px var(--quaternary);
 }
 
 .introduction-text {

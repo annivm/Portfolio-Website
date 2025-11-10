@@ -15,8 +15,12 @@ function App() {
   const projRef = useRef(null);
   const contactRef = useRef(null);
 
-  const scrollTo = ref =>
-    ref.current?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = ref => {
+    const navBarHeight = document.querySelector('.navbar').offsetHeight;
+    const offsetTop = ref.current.offsetTop - navBarHeight -22; //10px extra buffer
+    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    //ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>

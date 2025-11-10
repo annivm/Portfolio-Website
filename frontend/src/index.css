@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,11 +17,11 @@
 
 /* Color palette */
 :root {
-  --primary: #4A4E69;
+  --primary: #22223B;
   --secondary: #9A8C98;
   --tertiary: #C9ADA7;
   --accent: #F2E9E4;
-  --quaternary: #22223B;
+  --quaternary: #4A4E69;
 }
 
 a {
