@@ -1,0 +1,16 @@
+
+.scrollToTopHidden {
+    display: none;
+}
+
+.scrollToTop {
+    position: fixed;
+    bottom: 5%;
+    left: 92%;
+    text-align: center;
+    z-index: 5;
+}
+
+.scrollToTop:hover {
+    transform: scale(1.1);
+}

@@ -1,10 +1,9 @@
 import { forwardRef } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import Input from '../Shared/Input/Input';
-import './Contact.css';
 import Button from '../Shared/Button/Button';
+import './Contact.css';
 
 const Contact = forwardRef((props, ref) => {
     const formRef = useRef()
@@ -51,12 +50,3 @@ const Contact = forwardRef((props, ref) => {
 });
 
 export default Contact;
-
-            // <InputField
-            //   id="description"
-            //   name="description"
-            //   value={formData.description}
-            //   onChange={handleChange}
-            //   rows={4}
-            //   required
-            // />

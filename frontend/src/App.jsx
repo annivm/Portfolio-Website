@@ -7,6 +7,7 @@ import Experience from './components/Experience/Experience'
 import Contact from './components/Contact/Contact'
 
 import './App.css'
+import ScrollToTop from './components/Shared/ScrollToTop/ScrollToTop';
 
 function App() {
   const introRef = useRef(null);
@@ -15,16 +16,18 @@ function App() {
   const projRef = useRef(null);
   const contactRef = useRef(null);
 
+  // Navbar scroll function
   const scrollTo = ref => {
     const navBarHeight = document.querySelector('.navbar').offsetHeight;
     const offsetTop = ref.current.offsetTop - navBarHeight -22; //10px extra buffer
     window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-    //ref.current?.scrollIntoView({ behavior: "smooth" });
   };
+
 
   return (
     <>
-      {/* <h1>Anni Mustonen</h1> */}
+
+      <ScrollToTop onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}/>
       <Introduction ref={introRef}/>
       <NavBar
         onIntro={() => scrollTo(introRef)}

@@ -35,29 +35,38 @@
 .button--inverse:active {
     transform: scale(0.9);
   }
-  .button--danger {
-    background: #8d3a3a;
-    border-color: #8d3a3a;
-  }
-  .button--danger:hover,
-  .button--danger:active {
-    background: #4a1f1f;
-    border-color: #4a1f1f;
-  }
-  .button:disabled,
-  .button:hover:disabled,
-  .button:active:disabled {
-    background: #ccc;
-    color: #979797;
-    border-color: #ccc;
-    cursor: not-allowed;
-  }
-  .button--small {
-    font-size: 0.8rem;
-  }
-  .button--big {
-    font-size: 1.5rem;
-  }
+.button--danger {
+  background: #8d3a3a;
+  border-color: #8d3a3a;
+}
+.button--danger:hover,
+.button--danger:active {
+  background: #4a1f1f;
+  border-color: #4a1f1f;
+}
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+.button--small {
+  font-size: 0.8rem;
+}
+.button--big {
+  font-size: 1.5rem;
+}
+.button--round {
+  border-radius: 25px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 2px 5px var(--secondary);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
 @media (max-width: 1000px) {
   .button {
