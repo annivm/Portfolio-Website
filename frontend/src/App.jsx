@@ -19,7 +19,7 @@ function App() {
   // Navbar scroll function
   const scrollTo = ref => {
     const navBarHeight = document.querySelector('.navbar').offsetHeight;
-    const offsetTop = ref.current.offsetTop - navBarHeight -22; //10px extra buffer
+    const offsetTop = ref.current.offsetTop - navBarHeight -28; //28px extra buffer
     window.scrollTo({ top: offsetTop, behavior: 'smooth' });
   };
 

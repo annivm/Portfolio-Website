@@ -16,7 +16,7 @@
     outline: none;
   }
   .button:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .button:active {
@@ -81,6 +81,7 @@
 
 @media (max-width: 1000px) {
   .button {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+    font-weight: 700;
   }
 }
