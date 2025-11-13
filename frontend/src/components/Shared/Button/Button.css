@@ -4,7 +4,7 @@
     border-radius: 4px;
     background: var(--primary);
     color: var(--tertiary);
-    text-shadow: 0 5px 12px var(--quaternary);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
     margin-right: 1rem;
     text-decoration: none;
@@ -26,11 +26,14 @@
   .button--inverse {
     background: var(--secondary);
     color: var(--accent);
+    box-shadow:
+      0 8px 10px rgba(29, 29, 49, 0.9),
+      inset 0 1px 0 rgba(242, 233, 228, 0.1),
+      inset 0 -1px 1px rgba(154, 140, 152, 0.15),
+      inset 0 0 0px 0px rgba(255, 255, 255, 0);
 }
 .button--inverse:hover {
-    color: var(--accent);
-    background: var(--quaternary);
-    transform: scale(1);
+    transform: scale(1.1);
 }
 .button--inverse:active {
     transform: scale(0.9);
@@ -62,10 +65,18 @@
   border-radius: 25px;
   width: 30px;
   height: 30px;
-  box-shadow: 0 2px 5px var(--secondary);
+  box-shadow: 0 0 5px var(--secondary);
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button--transparent {
+  background-color: transparent;
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
 }
 
 @media (max-width: 1000px) {

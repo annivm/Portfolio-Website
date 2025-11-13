@@ -6,7 +6,8 @@ const Button = props => {
       className={`button button--${props.size || 'default'}
                   ${props.inverse ? 'button--inverse' : ''}
                   ${props.danger ? 'button--danger' : ''}
-                  ${props.round ? 'button--round' : ''}`}
+                  ${props.round ? 'button--round' : ''}
+                  ${props.transparent ? 'button--transparent' : ''}`}
       type={props.type}
       onClick={props.onClick}
       disabled={props.disabled}

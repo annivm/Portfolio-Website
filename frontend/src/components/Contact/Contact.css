@@ -6,13 +6,17 @@
     margin: 2rem;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 0 20px 3px var(--quaternary);
+    box-shadow:
+      0 8px 10px rgba(29, 29, 49, 0.9),
+      inset 0 1px 0 rgba(242, 233, 228, 0.1),
+      inset 0 -1px 0 rgba(154, 140, 152, 0.1),
+      inset 0 0 0px 0px rgba(255, 255, 255, 0);
 }
 
 .contact-heading {
     flex: 1;
     color: var(--secondary);
-    text-shadow: 0 5px 12px var(--quaternary);
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .contact-info {
@@ -20,6 +24,12 @@
     font-size: 1.1rem;
 }
 
+.contact-info p, a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
 
 .contact-form {
     flex: 1.5;

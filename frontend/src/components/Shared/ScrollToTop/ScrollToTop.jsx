@@ -1,4 +1,5 @@
 import Button from '../Button/Button'
+import { IoIosArrowUp } from "react-icons/io";
 import { useEffect, useState } from 'react';
 import './ScrollToTop.css'
 
@@ -26,8 +27,8 @@ const ScrollToTop = ({ onClick }) => {
 
     return(
         <div className={showScrollToTop} >
-            <Button round='round' onClick={onClick}>
-                ⬆️
+            <Button round transparent onClick={onClick}>
+                <IoIosArrowUp size={20}/>
             </Button>
         </div>
     )

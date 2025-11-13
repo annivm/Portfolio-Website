@@ -29,7 +29,7 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         ICT Engineer
-                        <FadeInText className='timeline-text' delay={300}>
+                        <FadeInText className='timeline-text'>
                             Tampere University of Applied Sciences
                             <br/>
                                 199/240 ETCs
@@ -47,7 +47,7 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         Biomedical Laboratory Scientist
-                        <FadeInText className='timeline-text' delay={300}>
+                        <FadeInText className='timeline-text'>
                             Tampere University of Applied Sciences
                             <br/>
                             Graduated
@@ -64,7 +64,7 @@ const Education = forwardRef((props, ref) => {
                     </TimelineSeparator>
                     <TimelineContent>
                         General Upper Secondary School
-                        <FadeInText className='timeline-text' delay={300}>
+                        <FadeInText className='timeline-text'>
                             Järvenpään lukio
                             <br/>
                             Graduated

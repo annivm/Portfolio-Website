@@ -1,5 +1,10 @@
 import { forwardRef } from 'react';
 import { useRef } from 'react';
+import { MdOutlineEmail } from "react-icons/md";
+import { PiPhone } from "react-icons/pi";
+import { IoLocationOutline } from "react-icons/io5";
+import { FaRegFilePdf } from "react-icons/fa6";
+import { BsLinkedin } from "react-icons/bs";
 import emailjs from '@emailjs/browser';
 import Input from '../Shared/Input/Input';
 import Button from '../Shared/Button/Button';
@@ -26,13 +31,21 @@ const Contact = forwardRef((props, ref) => {
 
             <div className='contact-info'>
 
-                <p> ✉️ anniv.mustonen@gmail.com</p>
-                <p>📞 +358 451 244 064 </p>
-                <p> 📍 Tampere, Suomi </p>
+                <p> <MdOutlineEmail /> anniv.mustonen@gmail.com</p>
+                <p> <PiPhone /> +358 451 244 064 </p>
+                <p> <IoLocationOutline /> Tampere, Suomi </p>
+                <a
+                    href="https://www.linkedin.com/in/anni-mustonen-316118295/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <BsLinkedin />
+                    LinkedIn
+                </a>
                 <br/>
-                <a href="./././public/CV2025_syksy.pdf"> 📂 Open CV (Finnish)</a>
                 <br/>
-                <a href="./././public/CV2025_syksy.pdf" download> 📁 Download CV (Finnish)</a>
+                <a href="./././public/CV2025_syksy.pdf"> <FaRegFilePdf /> Open CV (Finnish)</a>
+                <br/>
+                <a href="./././public/CV2025_syksy.pdf" download> <FaRegFilePdf /> Download CV (Finnish)</a>
             </div>
 
             <form ref={formRef} className='contact-form' onSubmit={handleSubmit}>
@@ -42,7 +55,7 @@ const Contact = forwardRef((props, ref) => {
                 <Input id="topic" name="topic" type="text" label="Topic" required="True" placeholder="Enter topic"/>
                 <Input id="email" name="email" type="email" label="Email" required="True" placeholder="Enter email"/>
                 <Input id="message" name="message" type="text" label="Message" rows={5} required="True" placeholder="Enter message"/>
-                <Button inverse type="submit" value="Send">Send Email</Button>
+                <Button inverse transparent type="submit" value="Send">Send Email</Button>
             </form>
 
         </div>

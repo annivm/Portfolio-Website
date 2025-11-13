@@ -12,19 +12,19 @@ const NavBar = ({ onIntro, onExp, onEdu, onProj, onContact }) => {
 
     return(
         <div className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
-            <Button size="big" onClick={onIntro}>
+            <Button size="big" transparent onClick={onIntro}>
                 Introduction
             </Button>
-            <Button size="big" onClick={onExp}>
+            <Button size="big" transparent onClick={onExp}>
                 Experience
             </Button>
-            <Button size="big" onClick={onEdu}>
+            <Button size="big" transparent onClick={onEdu}>
                 Education
             </Button>
-            <Button size="big" onClick={onProj}>
+            <Button size="big" transparent onClick={onProj}>
                 Projects
             </Button>
-            <Button size="big" onClick={onContact}>
+            <Button size="big" transparent onClick={onContact}>
                 Contact
             </Button>
         </div>
