@@ -1,10 +1,34 @@
 import { forwardRef } from 'react';
+import { MdOutlineTaskAlt } from "react-icons/md";
+import ExpandableCard from '../Shared/ExpandableCard/ExpandableCard';
 import './Experience.css';
 
 const Experience = forwardRef((props, ref) => {
+
     return (
-        <div ref={ref} className="box">
-            <h1 className="heading">Experience</h1>
+        <div ref={ref} className="exp-box">
+            <h1 className="exp-heading">Experience</h1>
+            <div className='exp-section'>
+                <ExpandableCard title="IT Trainee" period="5/2025 - Current (Fixed-term 12/2025)" company="Fimlab Laboratoriot Oy">
+                    <p>Working as an IT trainee at Fimlab Laboratoriot Oy, gaining hands-on experience in IT operations within a healthcare laboratory.</p>
+                    <p className='list-text'>
+                    <MdOutlineTaskAlt /> Worked as part of a large-scale system renewal project<br/>
+                    <MdOutlineTaskAlt /> Participated in the customer account transition team<br/>
+                    <MdOutlineTaskAlt /> User management<br/>
+                    <MdOutlineTaskAlt /> IT Support tasks
+                    </p>
+                </ExpandableCard>
+
+                <ExpandableCard title="Biomedical Laboratory Scientist" period="12/2019 - Current (Permanent position)" company="Fimlab Laboratoriot Oy">
+                    <p>Worked as a biomedical laboratory scientist in hematology department at Fimlab Laboratoriot Oy, Finland's largest medical laboratory service provider.</p>
+                    <p className='list-text'>
+                    <MdOutlineTaskAlt /> 24/7 Laboratory work in central laboratory<br/>
+                    <MdOutlineTaskAlt /> CBC & body fluid analysis, Differential count<br/>
+                    <MdOutlineTaskAlt /> Blood sampling, EKG, patient service<br/>
+                    <MdOutlineTaskAlt /> Quality control and maintenance of laboratory equipment
+                    </p>
+                </ExpandableCard>
+            </div>
         </div>
     )
 });
