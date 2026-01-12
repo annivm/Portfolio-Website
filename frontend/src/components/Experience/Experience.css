@@ -1,4 +1,4 @@
-.exp-box{
+.exp-box, .project-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +12,7 @@
       inset 0 0 0px 0px rgba(255, 255, 255, 0);
 }
 
-.exp-heading{
+.exp-heading, .project-heading{
     text-align: start;
     color: var(--secondary);
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
