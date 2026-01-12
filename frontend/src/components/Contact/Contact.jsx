@@ -5,6 +5,7 @@ import { PiPhone } from "react-icons/pi";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 import emailjs from '@emailjs/browser';
 import Input from '../Shared/Input/Input';
 import Button from '../Shared/Button/Button';
@@ -40,6 +41,13 @@ const Contact = forwardRef((props, ref) => {
                     rel="noopener noreferrer">
                     <BsLinkedin />
                     LinkedIn
+                </a>
+                <a
+                    href="https://github.com/annivm"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <FaGithub />
+                    Github (atm under construction)
                 </a>
                 <br/>
                 <br/>
