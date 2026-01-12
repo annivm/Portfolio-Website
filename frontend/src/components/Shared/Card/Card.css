@@ -7,3 +7,7 @@
     padding: 1rem;
     overflow: hidden;
   }
+
+  .exp-card {
+    min-height: 200px;
+  }
