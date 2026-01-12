@@ -28,11 +28,11 @@ const Education = forwardRef((props, ref) => {
                         <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        ICT Engineer
+                        ICT Engineer, Software Development
                         <FadeInText className='timeline-text'>
                             Tampere University of Applied Sciences
                             <br/>
-                                199/240 ETCs
+                                219/240 ETCs
                         </FadeInText>
                     </TimelineContent>
                 </TimelineItem>
