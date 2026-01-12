@@ -26,3 +26,10 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 740px) {
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+  }
+}
