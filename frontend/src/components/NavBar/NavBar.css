@@ -1,6 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 2rem;
     padding: 0.5rem;
     background-color: transparent;
