@@ -1,5 +1,4 @@
 ````markdown
-# Portfolio-Website
 # Portfolio Website
 
 Personal portfolio website showcasing projects, skills, and professional background.
@@ -75,6 +74,14 @@ npm run build
 ```
 
 
+## **Notes**
+
+- Project contact details and email configuration are in `src/components/Contact/Contact.jsx`. -> make sure to add your own in .env-file:
+    VITE_SERVICE_ID=
+    VITE_TEMPLATE_ID=
+    VITE_PUBLIC_KEY=
+
+
 ## Author
 
 Anni Mustonen
@@ -82,49 +89,4 @@ Anni Mustonen
 ## License
 
 This project is intended for personal portfolio use. All rights reserved.
-
-## **Quick Start (Frontend)**
-
-- **Folder:** `frontend` — the React + Vite app lives here.
-- **Prerequisites:** Node.js (LTS) and npm.
-- **Install dependencies:**
-
-```powershell
-cd frontend; npm install
-```
-
-- **Run development server:**
-
-```powershell
-npm run dev
-```
-
-The dev server runs at `http://localhost:5173` by default.
-
-- **Build for production:**
-
-```powershell
-npm run build
-```
-
-- **Preview production build locally:**
-
-```powershell
-npm run preview
-```
-
-## **Available Scripts**
-
-- **dev:** runs `vite` (start dev server).
-- **build:** runs `vite build` (production build).
-- **preview:** runs `vite preview` (serve production build locally).
-- **lint:** runs `eslint .` (check for lint issues).
-
-## **Notes**
-
-- If you use environment variables, set them in `frontend/.env` before running or deploying.
-- Project contact details and email configuration are in `src/components/Contact/Contact.jsx`.
-
-If you'd like, I can also add a small deployment section (Render/Vercel instructions) or a short contributing guide.
-
 ````
