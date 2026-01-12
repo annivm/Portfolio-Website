@@ -24,6 +24,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    gap: 1em;
 }
 
 .exp-card{
@@ -66,3 +67,8 @@
     padding: 1.5rem;
 }
 
+@media (max-width: 740px) {
+  .exp-heading {
+    padding: 0 0 1em 0;
+  }
+}
