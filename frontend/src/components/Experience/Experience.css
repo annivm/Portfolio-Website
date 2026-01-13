@@ -71,4 +71,7 @@
   .exp-heading {
     padding: 0 0 1em 0;
   }
+  .exp-box, .project-box {
+    margin: 0.5rem;
+  }
 }
