@@ -7,12 +7,26 @@
 
 }
 
+.introduction-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .heading {
     color: var(--secondary);
     text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
 }
 
+.introduction-image {
+  width: 250px;
+  height: auto;
+}
+
 .introduction-text {
+    display: flex;
+    align-items: center;
     font-size: 1.2rem;
     max-width: 500px;
 }

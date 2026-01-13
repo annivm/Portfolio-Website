@@ -5,13 +5,16 @@ import './Introduction.css';
 const Introduction = forwardRef((props, ref) => {
     return (
     <div ref={ref} className="introduction">
-        <FadeInText component='h1' className='heading fade-in' delay={1000}>Anni Mustonen</FadeInText>
-        <p className='introduction-text'>
-            ICT student graduating in 2026 with a passion for problem-solving and continuous learning.
-            I have a degree in biomedical laboratory science and experince working in the central laboratory of a university hospital, doing shift work.
-            <br></br>
-            <br></br>
-            I'm looking for a intership or entry-level position in software development.
+        <section className='introduction-section'>
+            <FadeInText component='h1' className='heading fade-in' delay={1000}>Anni Mustonen</FadeInText>
+            <img src="/images/Mustonen_Anni_sq.png" alt="Anni Mustonen" className="introduction-image" />
+        </section>
+        <p className="introduction-text">
+            ICT student graduating in 2026 with a background in biomedical laboratory science.
+            I have hands-on experience from healthcare IT operations and practical coding experience gained through studies and projects, focusing on web development with React, Node.js, and SQL databases.
+            <br />
+            <br />
+           I'm seeking a junior or entry-level software developer role.
         </p>
     </div>
     )
