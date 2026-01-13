@@ -9,7 +9,7 @@
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  height: 500px;
+  max-height: 500px;
 }
 
 .image-container img {
@@ -45,23 +45,19 @@ img.block {
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 50%;
-    border-radius: 25px;
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 100%;
     cursor: pointer;
     padding: 0;
     background-color: transparent;
-    backdrop-filter: blur(6.3px);
-    -webkit-backdrop-filter: blur(6.3px);
 }
 
 .nav-button.left {
-  left: 1rem;
+  left: 0rem;
 }
 
 .nav-button.right {
-  right: 1rem;
+  right: 0rem;
 }
 
 .nav-button:hover {
