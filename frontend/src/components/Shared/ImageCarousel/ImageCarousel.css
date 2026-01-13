@@ -71,3 +71,9 @@ img.block {
 .nav-button:focus {
     outline: none;
 }
+
+@media (max-width: 740px) {
+  .image-container {
+    height: auto;
+  }
+}
