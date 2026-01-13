@@ -57,7 +57,7 @@ const Projects = forwardRef((props, ref) => {
                         target="_blank"
                         rel="noopener noreferrer">
                         <FaFigma />
-                        View site map draft on Figma (password: niitty)
+                        View sitemap draft on Figma (password: niitty)
                     </a>
                     <a
                         href="https://www.figma.com/proto/vxJ6OUat5h4qBHtblg1n0Y/NIITTY2?node-id=4-3&t=arX6qdsiEROYTyxk-1&scaling=min-zoom&content-scaling=fixed&page-id=4%3A2&starting-point-node-id=4%3A3"
@@ -73,6 +73,7 @@ const Projects = forwardRef((props, ref) => {
                         <FaFigma />
                         View mobile prototype on Figma (password: niitty)
                     </a>
+                    < br/>
                     <ImageCarousel project="niitty"/>
                 </ExpandableCard>
                 <ExpandableCard title="Coming soon" description="Stay tuned"></ExpandableCard>
