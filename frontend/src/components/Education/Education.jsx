@@ -8,15 +8,14 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import FadeInText from '../Shared/FadeInText/FadeInText';
 
-
 import './Education.css';
-
+import './../Experience/Experience.css';
 
 const Education = forwardRef((props, ref) => {
 
     return (
         <div ref={ref} className="education-box">
-            <h1 className="heading">Education</h1>
+            <h1 className="education-heading">Education</h1>
 
             <Timeline position='alternate'>
                 <TimelineItem>

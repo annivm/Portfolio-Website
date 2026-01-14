@@ -46,3 +46,9 @@
         text-align: center;
     }
 }
+
+@media (max-width: 740px) {
+    .contact-box {
+        margin: 0.5rem;
+    }
+}
