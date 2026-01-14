@@ -48,7 +48,7 @@ const Projects = forwardRef((props, ref) => {
                             href="https://sites.tuni.fi/perheinfo/"
                             target="_blank"
                             rel="noopener noreferrer">
-                            perheinfo.fi</a>
+                            perheinfo.fi</a>)
                     </p>
                     <p>We had a actual customer for this and competed against other teams who also worked on the same project. At the end of the course, we presented our work for the customer and other teams, and voted for the best one. Ours won! </p>
                     <p>This was made with Figma. Along the process, we had meetings with the customer and got feedback and requests for improvements.</p>
