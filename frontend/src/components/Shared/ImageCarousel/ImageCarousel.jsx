@@ -3,7 +3,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import '../Button/Button.css';
 import './ImageCarousel.css';
 
-const ImageCarousel = ({project, button}) => {
+const ImageCarousel = ({project, button=""}) => {
     const images = [
         { id: 1, src: `/images/${project}1.png` },
         { id: 2, src: `/images/${project}2.png` },
