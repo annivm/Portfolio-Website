@@ -45,10 +45,11 @@ const Projects = forwardRef((props, ref) => {
                     <p>
                         The aim was to make a better version of an existing website with improved accessibility and design principles. (Original website:
                         <a
+                            className='inline-link'
                             href="https://sites.tuni.fi/perheinfo/"
                             target="_blank"
                             rel="noopener noreferrer">
-                            perheinfo.fi</a>)
+                             perheinfo.fi</a> )
                     </p>
                     <p>We had a actual customer for this and competed against other teams who also worked on the same project. At the end of the course, we presented our work for the customer and other teams, and voted for the best one. Ours won! </p>
                     <p>This was made with Figma. Along the process, we had meetings with the customer and got feedback and requests for improvements.</p>
@@ -73,8 +74,26 @@ const Projects = forwardRef((props, ref) => {
                         <FaFigma />
                         View mobile prototype on Figma (password: niitty)
                     </a>
-                    < br/>
+                    <br />
                     <ImageCarousel project="niitty"/>
+                </ExpandableCard>
+                <ExpandableCard title="Cocktail app" description= "Mobile app for Android built with Kotlin and Jetpack Compose" other="School project, teamwork">
+                        <p>A course project for mobile app development course.</p>
+                        <p>Users can view cocktail recipes by category or use search. The app shows detailed information about each recipe and an image of the cocktail.</p>
+                        <p>All the data is fetched from a REST API.</p>
+                        <p>The app has also a feature to locate users nearest grocery stores and Alkos.</p>
+                        <p>Interface was made also in Finnish</p>
+                        <p>Disclaimer: Shopping list feature is not functional in the app, but it was planned for future development.</p>
+                        <br />
+                        <a
+                            href="https://github.com/annivm/cocktail-app"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <FaGithub />
+                            Check it on GitHub
+                        </a>
+                        <br />
+                        <ImageCarousel project="cocktail" button="light"/>
                 </ExpandableCard>
                 <ExpandableCard title="Coming soon" description="Stay tuned"></ExpandableCard>
             </section>
