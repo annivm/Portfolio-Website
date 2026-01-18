@@ -69,6 +69,14 @@ img.block {
     outline: none;
 }
 
+.nav-button.light {
+    color: var(--secondary);
+}
+
+.nav-button.light:hover {
+  color: var(--tertiary)
+}
+
 @media (max-width: 740px) {
   .image-container {
     height: auto;

@@ -3,7 +3,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import '../Button/Button.css';
 import './ImageCarousel.css';
 
-const ImageCarousel = ({project}) => {
+const ImageCarousel = ({project, button}) => {
     const images = [
         { id: 1, src: `/images/${project}1.png` },
         { id: 2, src: `/images/${project}2.png` },
@@ -27,7 +27,7 @@ const ImageCarousel = ({project}) => {
 
     return (
         <section className='image-container'>
-            <button className='nav-button left' onClick={ (event) => { event.stopPropagation(); handlePreviousClick() }}><IoIosArrowBack size={20}/></button>
+            <button className={`nav-button left ${button}`} onClick={ (event) => { event.stopPropagation(); handlePreviousClick() }}><IoIosArrowBack size={20}/></button>
             {images.map((image, index) => (
                 <img
                     src={image.src}
@@ -36,7 +36,7 @@ const ImageCarousel = ({project}) => {
                     key={image.id}
                 />
             ))}
-            <button className="nav-button right" onClick={ (event) => { event.stopPropagation(); handleNextClick() }}><IoIosArrowForward size={20}/></button>
+            <button className={`nav-button right ${button}`} onClick={ (event) => { event.stopPropagation(); handleNextClick() }}><IoIosArrowForward size={20}/></button>
         </section>
     )
 }
