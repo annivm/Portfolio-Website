@@ -123,6 +123,21 @@ const Projects = forwardRef((props, ref) => {
                         <br />
                         <ImageCarousel project="cocktail" button="light"/>
                 </ExpandableCard>
+                <ExpandableCard title="Today - Event manager" description="Java-based project for fetching events from different sources" other="School project">
+                    <p>Java-based command line application for fetching events from a REST API, CSV and SQLite.</p>
+                    <p>This project was made with Java and Maven and used OpenCSV, Picocli, Jackson and SQLite</p>
+                    <p>User can search events by date, filter events by category and add events.</p>
+                    < br />
+                        <a
+                            href="https://github.com/annivm/Java-course-and-project/tree/main/project"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <FaGithub />
+                            Check it on GitHub
+                        </a>
+                    < br />
+                    <ImageCarousel project="java" />
+                </ExpandableCard>
                 <ExpandableCard title="Coming soon" description="Stay tuned"></ExpandableCard>
             </section>
         </div>
