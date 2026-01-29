@@ -25,10 +25,10 @@ const Projects = forwardRef((props, ref) => {
                     <br />
                     <ImageCarousel project="knitandsell"/>
                 </ExpandableCard>
-                <ExpandableCard title="Portfolio Website" description="Personal portfolio website built with React and CSS" other="Personal project">
+                <ExpandableCard title="Portfolio Website" description="Personal portfolio website built with React" other="Personal project">
                     <p>This is the portfolio website you are currently viewing. Started as a personal project to showcase my skills and projects.</p>
                     <br />
-                    <p>The website is built with React and CSS, focusing on responsive design and user experience.</p>
+                    <p>The website is built with React, focusing on responsive design and user experience.</p>
                     <br />
                     <p>This project was fun but also educational as I experimented with my visions and learned how to implement them.</p>
                     <br />
@@ -76,6 +76,34 @@ const Projects = forwardRef((props, ref) => {
                     </a>
                     <br />
                     <ImageCarousel project="niitty"/>
+                </ExpandableCard>
+                <ExpandableCard title="Reparo" description="Frontend for imaginary startup" other="School project, teamwork">
+                    <p>We created imaginary startup for this course. It consisted two teams: frontend and backend. During the course we had a customer buing our product, who gave us suggestions and asked for improvements.</p>
+                    <p>Reparo offers a place where people meet to get their clothes fixed or to provide repairing services. You can list your broken items for repairing or you can offer to repair others. Afterwards you can give review for the user. We also implemented admin panels for managing users and content.</p>
+                    <p>As member of the frontend-team, I participated designing the application. This web application is made with React and designed with Figma.</p>
+                    <a
+                        href="https://github.com/annivm/Reparo-frontend"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FaGithub />
+                        Check it on GitHub
+                    </a>
+                    <a
+                        href="https://www.figma.com/proto/g6yXIXmVkbFGfU6IPftwUr/Reparo?node-id=50-265&p=f&t=e2vhmWfVHHD7HKY8-1&scaling=scale-down&content-scaling=fixed&page-id=50%3A111&starting-point-node-id=50%3A114"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FaFigma />
+                        View desktop prototype on Figma (password: reparo)
+                    </a>
+                    <a
+                        href="https://www.figma.com/proto/g6yXIXmVkbFGfU6IPftwUr/Reparo?node-id=38-10&p=f&t=ezELkXoH3dVTwcQn-1&scaling=scale-down&content-scaling=fixed&page-id=6%3A2&starting-point-node-id=38%3A10"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <FaFigma />
+                        View mobile prototype on Figma (password: reparo)
+                    </a>
+                    <br />
+                    <ImageCarousel project="reparo" />
                 </ExpandableCard>
                 <ExpandableCard title="Cocktail app" description= "Mobile app for Android built with Kotlin and Jetpack Compose" other="School project, teamwork">
                         <p>A course project for mobile app development course.</p>
