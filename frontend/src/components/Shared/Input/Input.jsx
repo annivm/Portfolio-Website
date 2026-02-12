@@ -2,7 +2,7 @@
 import './Input.css';
 
 const Input = props => {
-  if (props.rows > 1) {
+  if (props.rows > 1) { // Textarea for message input
     return(
       <div className='form-control'>
         <label htmlFor={props.id}>{props.label}</label>

@@ -21,7 +21,7 @@ const ScrollToTop = ({ onClick }) => {
 
         window.addEventListener('scroll', handleVisibility);
         return () => {
-        window.removeEventListener('scroll', handleVisibility);
+            window.removeEventListener('scroll', handleVisibility);
         }
     }, []);
 

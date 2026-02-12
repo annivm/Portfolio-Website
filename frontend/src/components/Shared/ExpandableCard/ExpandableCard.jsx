@@ -6,8 +6,10 @@ const ExpandableCard = ({ title, description, other, children }) => {
 
   return (
     <Card className={`exp-card`} onClick={() => setExpanded(prev => !prev)}>
-      <h2>{title}</h2>
-      <p>{description}<br/>{other}</p>
+      <h3>{title}</h3>
+      <br />
+      <p>{description}</p>
+      <p className={`secondary-text`}>{other}</p>
       <div className={`details ${expanded ? 'show' : ''}`}>
         {children}
       </div>

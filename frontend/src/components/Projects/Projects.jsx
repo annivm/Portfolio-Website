@@ -8,7 +8,7 @@ import ImageCarousel from '../Shared/ImageCarousel/ImageCarousel';
 const Projects = forwardRef((props, ref) => {
     return (
         <div ref={ref} className="project-box">
-            <h1 className="project-heading">Projects</h1>
+            <h2 className="project-heading">Projects</h2>
             <section className='project-section'>
                 <ExpandableCard title="Marketplace application" description="Fullstack project - Knit&Sell" other="School project">
                     <p>A fullstack web application for buying and selling handmade items. The application consists of a frontend built with React, a backend built with Node.js and Express and a database using PostgreSQL. Images are uploded to Cloudinary.</p>

@@ -6,8 +6,8 @@ import './Experience.css';
 const Experience = forwardRef((props, ref) => {
 
     return (
-        <div ref={ref} className="exp-box">
-            <h1 className="exp-heading">Experience</h1>
+        <section ref={ref} className="exp-box">
+            <h2 className="exp-heading">Experience</h2>
             <div className='exp-section'>
                 <ExpandableCard title="IT Trainee" description="5/2025 - Current (Fixed-term 04/2026)" other="Fimlab Laboratoriot Oy">
                     <p>Working as an IT trainee at Fimlab Laboratoriot Oy, gaining hands-on experience in IT operations within a healthcare laboratory.</p>
@@ -30,7 +30,7 @@ const Experience = forwardRef((props, ref) => {
                     </p>
                 </ExpandableCard>
             </div>
-        </div>
+        </section>
     )
 });
 

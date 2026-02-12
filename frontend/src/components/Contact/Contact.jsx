@@ -16,6 +16,7 @@ const Contact = forwardRef((props, ref) => {
 
     const handleSubmit = async event => {
         event.preventDefault();
+        formRef.current.time.value = new Date().toString();
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, formRef.current, {publicKey: import.meta.env.VITE_PUBLIC_KEY})
         .then((result) => {
             console.log(result.text);
@@ -27,8 +28,8 @@ const Contact = forwardRef((props, ref) => {
 
 
     return (
-        <div ref={ref} className="contact-box">
-            <h1 className="contact-heading">Contact</h1>
+        <section ref={ref} className="contact-box">
+            <h2 className="contact-heading">Contact</h2>
 
             <div className='contact-info'>
 
@@ -47,7 +48,7 @@ const Contact = forwardRef((props, ref) => {
                     target="_blank"
                     rel="noopener noreferrer">
                     <FaGithub />
-                    Github (atm under construction)
+                    Github
                 </a>
                 <br/>
                 <br/>
@@ -57,7 +58,7 @@ const Contact = forwardRef((props, ref) => {
             </div>
 
             <form ref={formRef} className='contact-form' onSubmit={handleSubmit}>
-                <h2 className='form-label'>Send me an email:</h2>
+                <h3 className='form-label'>Send me an email:</h3>
                 <input type="hidden" name="time" value="Mar 10 2025 08:46"></input>
                 <Input id="name" name="name" type="text" label="Name" required="True" placeholder="Enter name"/>
                 <Input id="topic" name="topic" type="text" label="Topic" required="True" placeholder="Enter topic"/>
@@ -66,7 +67,7 @@ const Contact = forwardRef((props, ref) => {
                 <Button inverse transparent type="submit" value="Send">Send Email</Button>
             </form>
 
-        </div>
+        </section>
     )
 });
 

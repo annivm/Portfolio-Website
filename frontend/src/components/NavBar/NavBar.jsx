@@ -11,7 +11,7 @@ const NavBar = ({ onIntro, onExp, onEdu, onProj, onContact }) => {
     })
 
     return(
-        <div className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
+        <nav className={`navbar ${isSticky ? 'is-sticky' : ''}`}>
             <Button size="big" transparent onClick={onIntro}>
                 Introduction
             </Button>
@@ -27,7 +27,7 @@ const NavBar = ({ onIntro, onExp, onEdu, onProj, onContact }) => {
             <Button size="big" transparent onClick={onContact}>
                 Contact
             </Button>
-        </div>
+        </nav>
     )
 }
 

@@ -6,16 +6,26 @@
     border-radius: 6px;
     padding: 1rem;
     overflow: hidden;
-  }
+}
 
-  .exp-card {
-    display: flex;
-    flex-direction: column;
-    min-height: 200px;
-    width: 450px;
-  }
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  width: 450px;
+}
 
-  .exp-card:hover {
+.exp-card > h3 {
+  font-size: 1.5rem;
+}
+
+.exp-card > p {
+margin: 0;
+}
+.secondary-text{
+  color: var(--secondary);
+}
+.exp-card:hover {
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(154, 140, 152, 0.26);
     transform: scale(1.02);

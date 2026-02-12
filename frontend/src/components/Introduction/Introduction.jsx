@@ -4,7 +4,7 @@ import './Introduction.css';
 
 const Introduction = forwardRef((props, ref) => {
     return (
-    <div ref={ref} className="introduction">
+    <section ref={ref} className="introduction">
         <section className='introduction-section'>
             <FadeInText component='h1' className='heading fade-in' delay={1000}>Anni Mustonen</FadeInText>
             <img src="/images/Mustonen_Anni_sq.png" alt="Anni Mustonen" className="introduction-image" />
@@ -16,7 +16,7 @@ const Introduction = forwardRef((props, ref) => {
             <br />
            I'm seeking a junior or entry-level software developer role.
         </p>
-    </div>
+    </section>
     )
 });
 

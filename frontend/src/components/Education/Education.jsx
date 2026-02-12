@@ -14,8 +14,8 @@ import './../Experience/Experience.css';
 const Education = forwardRef((props, ref) => {
 
     return (
-        <div ref={ref} className="education-box">
-            <h1 className="education-heading">Education</h1>
+        <section ref={ref} className="education-box">
+            <h2 className="education-heading">Education</h2>
 
             <Timeline position='alternate'>
                 <TimelineItem>
@@ -31,7 +31,7 @@ const Education = forwardRef((props, ref) => {
                         <FadeInText className='timeline-text'>
                             Tampere University of Applied Sciences
                             <br/>
-                                219/240 ETCs
+                                221/240 ETCs
                         </FadeInText>
                     </TimelineContent>
                 </TimelineItem>
@@ -72,7 +72,7 @@ const Education = forwardRef((props, ref) => {
                 </TimelineItem>
             </Timeline>
 
-        </div>
+        </section>
     )
 });
 
