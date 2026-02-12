@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 740px) {
-    .contact-box {
+    .contact-box, .exp-box, .project-box {
         margin: 0.5rem;
     }
 }
