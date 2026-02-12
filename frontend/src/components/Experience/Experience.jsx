@@ -9,7 +9,7 @@ const Experience = forwardRef((props, ref) => {
         <section ref={ref} className="exp-box">
             <h2 className="exp-heading">Experience</h2>
             <div className='exp-section'>
-                <ExpandableCard title="IT Trainee" description="5/2025 - Current (Fixed-term 04/2026)" other="Fimlab Laboratoriot Oy">
+                <ExpandableCard title="IT Trainee" description="5/2025 - Current (Fixed-term 05/2026)" other="Fimlab Laboratoriot Oy">
                     <p>Working as an IT trainee at Fimlab Laboratoriot Oy, gaining hands-on experience in IT operations within a healthcare laboratory.</p>
                     <p>Initially hired as a summer trainee, the contract extended for autumn and again for spring based on performance and company needs.</p>
                     <p className='list-text'>
