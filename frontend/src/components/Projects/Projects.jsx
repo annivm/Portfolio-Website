@@ -1,9 +1,10 @@
 import { forwardRef } from 'react';
 import { FaGithub, FaFigma } from "react-icons/fa";
-import './Projects.css';
-import '../Experience/Experience.css';
 import ExpandableCard from '../Shared/ExpandableCard/ExpandableCard';
 import ImageCarousel from '../Shared/ImageCarousel/ImageCarousel';
+import TechIcons from '../Shared/TechIcons/TechIcons';
+import './Projects.css';
+import '../Experience/Experience.css';
 
 const Projects = forwardRef((props, ref) => {
     return (
@@ -11,6 +12,7 @@ const Projects = forwardRef((props, ref) => {
             <h2 className="project-heading">Projects</h2>
             <section className='project-section'>
                 <ExpandableCard title="Marketplace application" description="Fullstack project - Knit&Sell" other="School project">
+                    <TechIcons tech={["React", "TypeScript", "JavaScript", "NodeJs", "ExpressJsLight", "PostgreSQL", "Cloudinary"]}/>
                     <p>A fullstack web application for buying and selling handmade items. The application consists of a frontend built with React, a backend built with Node.js and Express and a database using PostgreSQL. Images are uploded to Cloudinary.</p>
                     <br />
                     <p>This project not only taught me fullstack development but also how to dockerize the application, build pipelines and deploy it to production.</p>
@@ -26,6 +28,7 @@ const Projects = forwardRef((props, ref) => {
                     <ImageCarousel project="knitandsell"/>
                 </ExpandableCard>
                 <ExpandableCard title="Portfolio Website" description="Personal portfolio website built with React" other="Personal project">
+                    <TechIcons tech={["React", "JavaScript", "Figma"]}/>
                     <p>This is the portfolio website you are currently viewing. Started as a personal project to showcase my skills and projects.</p>
                     <br />
                     <p>The website is built with React, focusing on responsive design and user experience.</p>
@@ -41,6 +44,7 @@ const Projects = forwardRef((props, ref) => {
                     </a>
                 </ExpandableCard>
                 <ExpandableCard title="Design project" description="Niitty website redesign" other="School project, teamwork">
+                    <TechIcons tech={["Figma"]}/>
                     <p>This is the course project for the design and accessibility course. </p>
                     <p>
                         The aim was to make a better version of an existing website with improved accessibility and design principles. (Original website:
@@ -78,6 +82,7 @@ const Projects = forwardRef((props, ref) => {
                     <ImageCarousel project="niitty"/>
                 </ExpandableCard>
                 <ExpandableCard title="Reparo" description="Frontend for imaginary startup" other="School project, teamwork">
+                    <TechIcons tech={["React", "JavaScript", "Figma"]}/>
                     <p>We created imaginary startup for this course. It consisted two teams: frontend and backend. During the course we had a customer buing our product, who gave us suggestions and asked for improvements.</p>
                     <p>Reparo offers a place where people meet to get their clothes fixed or to provide repairing services. You can list your broken items for repairing or you can offer to repair others. Afterwards you can give review for the user. We also implemented admin panels for managing users and content.</p>
                     <p>As member of the frontend-team, I participated designing the application. This web application is made with React and designed with Figma.</p>
@@ -106,6 +111,7 @@ const Projects = forwardRef((props, ref) => {
                     <ImageCarousel project="reparo" />
                 </ExpandableCard>
                 <ExpandableCard title="Cocktail app" description= "Mobile app for Android built with Kotlin and Jetpack Compose" other="School project, teamwork">
+                        <TechIcons tech={[ "Kotlin", "Android"]}/>
                         <p>A course project for mobile app development course.</p>
                         <p>Users can view cocktail recipes by category or use search. The app shows detailed information about each recipe and an image of the cocktail.</p>
                         <p>All the data is fetched from a REST API.</p>
@@ -124,6 +130,7 @@ const Projects = forwardRef((props, ref) => {
                         <ImageCarousel project="cocktail" button="light"/>
                 </ExpandableCard>
                 <ExpandableCard title="Today - Event manager" description="Java-based project for fetching events from different sources" other="School project">
+                    <TechIcons tech={["Java"]}/>
                     <p>Java-based command line application for fetching events from a REST API, CSV and SQLite.</p>
                     <p>This project was made with Java and Maven and used OpenCSV, Picocli, Jackson and SQLite</p>
                     <p>User can search events by date, filter events by category and add events.</p>

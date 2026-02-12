@@ -1,5 +1,4 @@
 
-
 .project-section {
   display: flex;
   flex-direction: row;
@@ -7,4 +6,13 @@
   justify-content: space-around;
   align-items: flex-start;
   gap: 1em;
+}
+
+.project-section ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.project-section li {
+    color: var(--secondary)
 }
